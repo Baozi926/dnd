@@ -5,4 +5,5 @@ inspired from various sources:
 
 TODOS:
  - multiple drag & drop;
- - ie support;
+ - run ajax call on succeseful dragging;
+ - ie support (will wait for ie10?);
