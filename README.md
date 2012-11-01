@@ -9,7 +9,7 @@ Drag & Drop (html5)
     127.0.0.1       localhost, hostname
 
 ### To start the demo:
-   - start nodejs: cd /path/to/dnd; node node-server.js
+   - start nodejs server: cd /path/to/dnd; node node-server.js
    - open first window [http://localhost:8888](http://localhost:8888)
    - open second window [http://hostname:8888/index2.html](http://hostname:8888/index2.html)
 
