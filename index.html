@@ -17,19 +17,22 @@
     </head>
 <body>
 
-    <div id="stack1" class="container">
-      <ul class="draggable">
-        <li>: item 1</li>
-        <li>: item 2</li>
-        <li>: item 3</li>
-        <li>: item 4</li>
-        <li>: item 5</li>
-        <li class="placeholder">Drag and Drop here!</li>
-      </ul>
+    <div class="clearfix">
+      <div id="stack1" class="container">
+        <ul class="draggable" id="zone1">
+          <li data-id="1"><span>:</span>item 1</li>
+          <li data-id="2"><span>:</span>item 2</li>
+          <li data-id="3"><span>:</span>item 3</li>
+          <li data-id="4"><span>:</span>item 4</li>
+          <li data-id="5"><span>:</span>item 5</li>
+          <li class="placeholder -hidden">empty!</li>
+        </ul>
+      </div>
     </div>
 
     <script src="js/vendor/jquery-1.8.2.min.js"></script>
-
+    <script src="js/vendor/json2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <!--
     <iframe src="index2.html" width="300" height="300" id="myframe"></iframe>
 -->
@@ -40,7 +43,7 @@
         <script>
           $(function(){
               app.makeDraggable("#stack1 li");
-              app.makeDroppable("#stack1 ul");
+              //app.makeDroppable("#stack1 ul");
           });
         </script>
     </body>

@@ -17,18 +17,32 @@
         <link rel="stylesheet" href="css/dnd.css">
     </head>
     <body>
-    <div id="stack2" class="container">
-      <ul class="droppable">
-        <li class="placeholder">Drag and Drop here!</li>
-      </ul>
+
+    <div class="clearfix">
+      <div id="stack2" class="container">
+        <ul class="droppable" id="zone2">
+          <li class="placeholder">Drag and Drop here!</li>
+        </ul>
+      </div>
     </div>
 
-
+    <div>
+      <div class="alertBox" id="alertBox" style="display: none">
+        <span class="icon -info">i</span>
+        <span class="icon -close">x</span>
+        <span class="-response"></span>
+      </div>
+    </div>
     <script src="js/vendor/jquery-1.8.2.min.js"></script>
+    <script src="js/vendor/json2.js"></script>
     <script src="js/main.js"></script>
     <script>
       $(function() {
+         $("#alertBox").find(".-close" ).click(function(){
+           $(this ).parent().fadeOut();
+         });
          app.makeDroppable("#stack2 ul");
+         //app.makeDraggable("#stack2 li");
       });
     </script>
     </body>
