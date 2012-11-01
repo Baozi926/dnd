@@ -1,8 +1,8 @@
 Drag & Drop (html5)
 ===================
    - drag one,multiple items from one window to another
-   - open first window http://localhost:8888
-   - open second window http://hostname:8888/index2.html
+   - open first window [http://localhost:8888](http://localhost:8888)
+   - open second window [http://hostname:8888/index2.html](http://hostname:8888/index2.html)
 
 
 ### Prerequisites
