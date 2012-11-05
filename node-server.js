@@ -1,4 +1,3 @@
-
 var http = require("http"),
     url = require("url"),
     path = require("path"),
@@ -24,7 +23,7 @@ http.createServer(function(request, response) {
          for (var i = 0; i < ids.length; i+= 1) {
            var id = ids[i];
            if (id) {
-             markup += '<li data-id="' + id + '"> : Item ' + id + '</li>\n';
+             markup += '<li data-id="' + id + '"><span>:</span> item ' + id + '</li>\n';
            }
          }
        }
